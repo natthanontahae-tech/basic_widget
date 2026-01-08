@@ -13,13 +13,13 @@ class MainApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text('Basic Widget'),
-          backgroundColor: const Color.fromARGB(255, 219, 164, 82),
+          backgroundColor: Colors.blue,
         ),
-        body: Center(
+        body: const Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Image(image: AssetImage('asset/images/ass1.gif'),width: 200,),
+            children: <Widget> [
+              Image(image: AssetImage('asset/images/ass1.gif'),width: 200),
               Text('Hello World!')
             ],
           ),
@@ -28,7 +28,7 @@ class MainApp extends StatelessWidget {
           onPressed: () {
             print('Floating Action Button Pressed');
           },
-          backgroundColor: const Color.fromARGB(255, 219, 164, 82),
+          backgroundColor: Colors.orange,
           child: Text('Click Me'),
         ),
       ),
